@@ -1,0 +1,377 @@
+.margin-left {
+    margin-left: 134px;
+}
+
+.margin-right {
+    margin-right: 134px;
+}
+
+.margin-top {
+    margin-top: 60px;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Phần Header */
+
+#header {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-items {
+    display: flex;
+    color: rgba(119,123,132);
+    font-weight: 500;
+}
+
+.header-items div {
+    margin: 0 10px;
+}
+
+#search_content {
+    border: 2px solid rgba(223,225,228,1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#input {
+    
+    border: none;
+    margin-left: 8px;
+}
+
+/* Phần banner */
+#banner {
+    width: 100%;
+    height: 390px;
+    position: relative;
+    background-image: url(img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#banner_content {   
+    position: absolute;
+    margin-top: -50px;
+}
+
+#banner_title {
+    color: rgba(50, 56, 66, 1);
+    font-size: 55px;
+    margin: 7.5px 0px;
+}
+
+#banner_describe {
+    color: rgba(54, 60, 69, 1);
+    font-size: 20px;
+    max-width: 443px;
+    text-align: justify;
+    margin: 7.5px 0px;
+}
+
+/* Phần fliter */
+
+#fliter {
+    display: flex;
+    justify-content: space-between;
+}
+
+#list {
+    display: flex;
+    align-items: center;
+}
+
+.list-item {
+    width: 174px;
+    height: 48px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: rgba(69, 157, 122);
+    line-height: 48px;
+}
+
+.list-item--activated {
+    background-color: rgba(69, 157, 122);
+    color: white;
+    border-radius: 3px;
+}
+
+#sort {
+    display: flex;
+    align-items: center;
+    height: 54px;
+}
+
+#sort-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(228, 229, 232);
+    height: 54px;
+    line-height: 54px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+#sort-icon {
+    margin-left: 15px;
+}
+
+#sort-input {
+    border: none;
+    line-height: 54px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+#sort-type {
+    background-color: rgba(243, 244, 246);
+    color: rgba(135, 141, 151);
+    font-size: 20px;
+    text-align: center;
+    line-height: 54px;
+    width: 140px;
+}
+
+/* Phần danh sách các products */
+#product {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-list {
+    display: grid;
+    grid-template-areas: 
+    'productItem productItem productItem productItem';
+    column-gap: 40px;
+    row-gap: 86px;
+}
+
+.product-list .product-item {
+    width: 268px;
+}
+
+.product-item .product-img {
+    position: relative;
+}
+
+.product-item .product-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(255,201,112);
+    color: rgb(161,112,35);
+    border-radius: 13px;
+    height: 22px;
+    padding: 5px;
+    text-align: center;
+    max-width: 70px;
+    min-width: 40px;
+    font-size: 13px;
+}
+
+.product-list .product-content {
+    margin-top: 14px;
+}
+
+.product-list .name {
+    color: rgb(49, 52, 56);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product-list .describe-product {
+    color: rgb(131,132,135);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.price-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.price-info .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+}
+
+.price-info .price .office-price {
+    color: rgb(49, 52, 56);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.price-info .price .old-price {
+    color: rgb(161,165,174);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#page {
+    display: flex;
+    align-items: center;
+    width: 232px;
+    justify-content: space-between;
+    margin-top: 108px;
+    color: rgb(175,178,186);
+}
+
+#page #page-chosen {
+    color: rgb(152,201,181);
+}
+
+/* Phần footer của website */
+#footer {
+    width: 100%;
+    height: 434px;
+    margin-top: 106px;
+    background-color: rgb(29,33,40);
+    color: white;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+#left {
+    width: 50%;
+}
+#information{
+    display: flex;
+}
+
+#information div {
+    color: lightgrey;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 2.5;
+}
+
+#information div div {
+    color: darkgrey;
+    font-size: 15px;
+}
+
+#information #help {
+    margin-left: 114px;
+}
+
+#information #contact {
+    margin-left: 50px;
+}
+
+#region {
+    width: 126px;
+    height: 35px;
+    border: 1px solid rgb(211,214,220);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 24px;
+}
+
+#region div {
+    line-height: 35px;
+}
+
+#region img {
+    transform: rotate(90deg);
+}
+
+#right {
+    width: 429px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-weight: 600;
+    height: 232px;
+}
+
+#title {
+    font-size: 25px;
+    color: lightgrey;
+    font-weight: 700;
+}
+
+#describe {
+    font-size: 18px;
+    color: darkgray;
+    font-weight: 600;
+}
+
+#sendEmail {
+    width: fit-content;
+    height: 50px;
+    border: 2px solid rgb(125,130,140);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#inputEmail {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: inherit;
+    width: 300px;
+    justify-content: space-between;
+    color: rgb(167,172,180);
+}
+
+#inputEmail img {
+    margin-left: 15px;
+}
+
+#inputEmail input {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    height: inherit;
+}
+
+#buttonSub {
+    color: rgb(242,246,248);
+    background: rgb(69,157,122);
+    height: 100%;
+    line-height: 54px;
+    width: 120px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#linkSub {
+}
+
+#copyright {
+    display: flex;
+    width: 345px;
+    justify-content: space-between;
+}
